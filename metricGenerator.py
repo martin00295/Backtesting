@@ -13,9 +13,6 @@ def generateMetrics():
     # 2. Calculate drawdown
     df['rel_drawdown'] = (df['equity'] - running_max) / running_max
 
-    # 3. Optionally convert to percentage
-    #drawdown_pct = drawdown * 100
-
     '''print(df)
 
 
